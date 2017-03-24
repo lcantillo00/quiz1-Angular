@@ -1,0 +1,61 @@
+quiz 1 Lilianne Cantillo
+
+1-An angular directive is:
+a way to define a custom element or attribute.
+
+
+
+2- Write the JavaScript code necessary to create a controller named "PageController" which prints the string "hello world" as soon as the page loads and the controller runs.
+
+angular.module(“name”,[])
+.controller(“PageController”,[‘$scope’, function($scope){
+	$scope.name=“Hello World!”;
+
+}] );
+
+then in the html file .
+body tag you use ng-app=“name” ng-controller=“PageController”
+<h1>{{name}}</h1>
+
+3- <body ng-app=“CookiesApp">
+
+4- function recSum(array){
+        if(array.length===1)return array[0];
+        return array[0]+recSum(array.slice(1));
+        };
+console.log(recSum([1,2,3,6,1]));
+
+5-
+function icyHot(a,b){
+    if(a<0 && b>100 || b<0 && a>100 ){
+        return true;
+    }else {
+        return false;
+    }
+
+}
+console.log(icyHot(120,-1));
+console.log(icyHot(-1,120));
+console.log(icyHot(2,120));
+
+6-
+function makes10(a,b){
+    if(a==10 || b==10 || a+b==10){
+        return true;
+    }else{
+        return false;
+    }
+
+}
+
+console.log(makes10(9, 10));
+console.log(makes10(9, 9));
+console.log(makes10(1, 9));
+
+7- function front22(string){
+    var res= string.substr(0,2);
+    var res2=string.concat(res);
+    return res+ res2;
+}
+console.log(front22("kitten"));
+console.log(front22("Ha"));
